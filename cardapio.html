@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DonutLand | Cardápio</title>
+  <meta name="description" content="Veja nosso cardápio completo de donuts deliciosos e fresquinhos da DonutLand.">
+  <link rel="stylesheet" href="stylecss.css" />
+  <script src="jsscript.js" defer></script>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="img/logodonut.png" alt="Logo DonutLand" class="logo" />
+      </a>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="pedido.html">Pedido</a></li>
+        <li><a href="impacto.html">Impacto Social</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Nosso Cardápio</h1>
+    <section class="produtos">
+
+      <!-- Produtos -->
+      <div class="produto" id="donut-homer">
+        <img src="img/donuthomer.png" alt="Donut Homer">
+        <h2>Donut Homer</h2>
+        <p>Donut rosa com cobertura de morango e granulado colorido.</p>
+        <span class="preco">R$ 8,00</span>
+        <button>Adicionar ao Pedido</button>
+      </div>
+
+      <div class="produto" id="donut-chocolate">
+        <img src="img/donutchoco3.png" alt="Donut de Chocolate">
+        <h2>Donut de Chocolate</h2>
+        <p>Clássico com cobertura de chocolate ao leite e recheio cremoso.</p>
+        <span class="preco">R$ 9,00</span>
+        <button>Adicionar ao Pedido</button>
+      </div>
+
+      <div class="produto" id="donut-doceleite">
+        <img src="img/donutdcleite.png" alt="Donut de Doce de Leite">
+        <h2>Donut de Doce de Leite</h2>
+        <p>Recheado com doce de leite artesanal e cobertura levemente caramelizada.</p>
+        <span class="preco">R$ 9,50</span>
+       <button>Adicionar ao Pedido</button>
+      </div>
+
+      <div class="produto" id="donut-cookie">
+        <img src="img/donutcookie.png" alt="Donut de Cookie">
+        <h2>Donut de Cookie</h2>
+        <p>Combinação irresistível de cookie crocante e donut fofinho.</p>
+        <span class="preco">R$ 10,00</span>
+        <button>Adicionar ao Pedido</button>
+      </div>
+
+      <div class="produto" id="donut-morango">
+        <img src="img/donutmorango.png" alt="Donut de Morango">
+        <h2>Donut de Geleia de Morango</h2>
+        <p>Recheado com geleia natural de morango e cobertura suave.</p>
+        <span class="preco">R$ 9,00</span>
+       <button>Adicionar ao Pedido</button>
+      </div>
+
+      <div class="produto" id="donut-branco">
+        <img src="img/donutbranco.png" alt="Donut de Chocolate Branco">
+        <h2>Donut de Chocolate Branco</h2>
+        <p>Donut com incrível sabor de chocolate branco.</p>
+        <span class="preco">R$ 9,00</span>
+       <button>Adicionar ao Pedido</button>
+      </div>
+
+      <div class="produto" id="donut-beijinho">
+        <img src="img/donut.beijinho.png" alt="Donut de Beijinho">
+        <h2>Donut de Beijinho</h2>
+        <p>Donut com sabor de beijinho cremoso e macio.</p>
+        <span class="preco">R$ 10,50</span>
+       <button>Adicionar ao Pedido</button>
+      </div>
+
+      <div class="produto" id="donut-mm">
+        <img src="img/donutmm.png" alt="Donut de MM">
+        <h2>Donut de MM</h2>
+        <p>Recheado com chocolate suíço e M&M's por cima.</p>
+        <span class="preco">R$ 12,00</span>
+        <button>Adicionar ao Pedido</button>
+      </div>
+
+      <div class="produto" id="donut-canela">
+        <img src="img/donutcanela.png" alt="Donut de Canela">
+        <h2>Donut de Canela</h2>
+        <p>Recheado com leite ninho e coberto com canela.</p>
+        <span class="preco">R$ 9,00</span>
+       <button>Adicionar ao Pedido</button>
+      </div>
+
+      <div class="produto" id="donut-maracuja">
+        <img src="img/donutmaracuja.png" alt="Donut de Maracujá">
+        <h2>Donut de Maracujá</h2>
+        <p>Mistura de chocolate e maracujá, sabor único.</p>
+        <span class="preco">R$ 11,00</span>
+        <button>Adicionar ao Pedido</button>
+      </div>
+
+      <div class="produto" id="donut-kitkat">
+        <img src="img/donutkitkat.png" alt="Donut de Kit Kat">
+        <h2>Donut de Kit Kat</h2>
+        <p>Recheado com chocolate Kit Kat e pedaços por cima.</p>
+        <span class="preco">R$ 13,00</span>
+        <button>Adicionar ao Pedido</button>
+      </div>
+
+    </section>
+
+    <!-- Carrinho -->
+    <div id="carrinho" class="carrinho">
+      <h3>Carrinho</h3>
+      <ul id="lista-carrinho"></ul>
+      <p><strong>Total:</strong> R$ <span id="total">0.00</span></p>
+
+      <label>Forma de pagamento:</label>
+      <select id="pagamento">
+        <option>Dinheiro</option>
+        <option>PIX</option>
+        <option>Cartão</option>
+      </select>
+
+      <br><br>
+      <a href="pedido.html" class="btn" onclick="salvarPedido()">Finalizar Pedido</a>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer-completo">
+  <img src="img/logodonut.png" alt="Logo DonutLand" class="logo-rodape" />
+  <p>&copy; 2025 DonutLand - Todos os direitos reservados</p>
+</footer>
+<script src="jsscript.js"></script>
+
+</body>
+</html>

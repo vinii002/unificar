@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DonutLand | Início</title>
+  <meta name="description" content="DonutLand - Os melhores donuts da cidade. Confira nosso cardápio!">
+  <!-- CSS do Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="stylecss.css"> <!-- Link para o CSS externo -->
+  <script src="jsscript.js" defer></script> <!-- JavaScript que será carregado com explicações -->
+</head>
+<body>
+  <!-- CABEÇALHO FIXO COM LOGO E MENU -->
+  <header>
+  <nav>
+    <a href="index.html">
+      <img src="img/logodonut.png" alt="Logo DonutLand" class="logo">
+    </a>
+
+    <!-- Botão hamburguer para mobile -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Lista de links -->
+    <ul class="nav-links" id="menu">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="cardapio.html">Cardápio</a></li>
+      <li><a href="pedido.html">Pedido</a></li>
+      <li><a href="impacto.html">Impacto Social</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <section class="hero">
+      <h1>Bem-vindo à DonutLand</h1>
+      <p>O paraíso dos donuts está aqui. Doces, divertidos e feitos com amor!</p>
+      <p>Confira nosso cardápio que vai além de donuts comuns!</p>
+      <a href="cardapio.html" class="btn">Ver Cardápio</a>
+    </section>
+
+    <!-- CARROSSEL DE PRODUTOS -->
+    <!-- CARROSSEL DE PRODUTOS -->
+<section class="carousel">
+  
+    <center>
+    <h2>Favoritos da galera🍩</h2>
+    </center>
+  
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="cardapio.html#donut-homer"><img src="img/donuthomer.png" alt="Donut Homer"></a></div>
+      <div class="swiper-slide"><a href="cardapio.html#donut-chocolate"><img src="img/donutchoco3.png" alt="Donut Chocolate"></a></div>
+      <div class="swiper-slide"><a href="cardapio.html#donut-doceleite"><img src="img/donutdcleite.png" alt="Donut Doce de Leite"></a></div>
+      <div class="swiper-slide"><a href="cardapio.html#donut-cookie"><img src="img/donutcookie.png" alt="Donut Cookie"></a></div>
+      <div class="swiper-slide"><a href="cardapio.html#donut-morango"><img src="img/donutmorango.png" alt="Donut Morango"></a></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+     
+    <!-- Paginadores (os pontinhos embaixo) -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+<!-- SOBRE NÓS, MISSÃO E VALORES -->
+<section class="sobre">
+  <h2>Sobre Nós</h2>
+  <p>
+   A DonutLand nasceu em 2022, fruto da paixão por doces e do sonho compartilhado de dois jovens empreendedores: Vinícius Ferreira e Yasmin Fonseca. Unindo criatividade, carinho e muito sabor, eles criaram uma marca que vai além de donuts — é sobre momentos felizes, cor e afeto em cada mordida.
+
+Desde o início, a missão da DonutLand sempre foi levar doçura e experiências memoráveis para a vida das pessoas. Com receitas artesanais, ingredientes selecionados e um toque único de personalidade, a marca conquistou o coração (e o paladar) de quem busca algo especial.
+
+Hoje, a DonutLand é sinônimo de alegria, qualidade e inovação — um verdadeiro paraíso dos donuts, feito com amor desde o primeiro dia.
+  </p>
+
+  <h3>Nossa Missão</h3>
+  <p>
+    Oferecer experiências doces e memoráveis aos nossos clientes, com produtos artesanais e atendimento acolhedor.
+  </p>
+
+  <h3>Nossos Valores</h3>
+  <ul>
+    <li>🍩 Amor pelo que fazemos</li>
+    <li>🌱 Compromisso com qualidade e sustentabilidade</li>
+    <li>❤️ Respeito ao cliente e à comunidade</li>
+  </ul>
+</section>
+<!-- LOCAIS DAS LOJAS -->
+<section class="locais">
+  <h2>Nossas Lojas</h2>
+  <div class="info-contato">
+  <p>⏰ <strong>Horário de funcionamento:</strong> 08h às 22h (seg a dom)</p>
+</div>
+  <div class="mapas-container">
+
+    <!-- Loja Barra -->
+    <div class="mapa">
+      <h3>DonutLand - Barra</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.7109748302896!2d-43.36070172536474!3d-22.997653341123485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda482f3cf5b5%3A0xa7dd934e3fdd28bf!2sBarra%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1751601861802!5m2!1spt-BR!2sbr"
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <p class="contato-loja">📞 (21) 99999-1111</p>
+    </div>
+
+    <!-- Loja Engenho de Dentro -->
+    <div class="mapa">
+      <h3>DonutLand - Engenho de Dentro</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.735968059739!2d-43.285903225369196!3d-22.886209937134655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997d5b532423f7%3A0x25151e5195671fe3!2sNorte%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1751602106775!5m2!1spt-BR!2sbr"
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <p class="contato-loja">📞 (21) 99999-2222</p>
+    </div>
+
+    <!-- Loja Leblon -->
+    <div class="mapa">
+      <h3>DonutLand - Leblon</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1092.016368674393!2d-43.2218005059748!3d-22.983695693652322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurantes!5e0!3m2!1spt-BR!2sbr!4v1751602226435!5m2!1spt-BR!2sbr" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <p class="contato-loja">📞 (21) 99999-3333</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  </main>
+
+  <!-- RODAPÉ SIMPLES -->
+  <footer class="footer-completo">
+    <img src="img/logodonut.png" alt="Logo DonutLand" class="logo-rodape">
+    <p>&copy; 2025 DonutLand - Todos os direitos reservados</p>
+  </footer>
+
+<!-- JS do Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true, // Carrossel infinito
+    autoplay: {
+      delay: 3000, // 3 segundos por slide
+      disableOnInteraction: false, // Continua rodando mesmo se o usuário interagir
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true, // Permite clicar nos pontinhos
+    },
+  });
+const menu = document.getElementById("menu")
+const menuToggle = document.querySelector(".menu-toggle");
+  
+  function toggleMenu() {
+  menu.classList.toggle("show");
+}
+// Fecha o menu ao clicar em um item da lista
+document.querySelectorAll('#menu a'). forEach (link =>{
+  link.addEventListener('click', () => {
+   menu.classList.remove("show");
+  });
+});
+
+//fecha o menu ao clicar fora do menu
+document.addEventListener('click', function(event) 
+{ const isClickInsideMenu = menu.contains(event.target);
+  const isClickOnToggle = menuToggle.contains(event.target);
+  if (!isClickInsideMenu && !isClickOnToggle) {
+  menu.classList.remove('show');
+}
+});
+
+
+</script>
+
+</body>
+</html>
